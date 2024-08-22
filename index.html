@@ -21,6 +21,9 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                Title_color: ' #212121',
+                Description_color: '  #494949',
+                grn_color: ' #ABEF5F',
                 bg_color: '#F4F4F4',
               }
             }
@@ -30,8 +33,7 @@
       <!-- Font style -->
        <style>
         .manrope-font{
-          font-family: "Manrope", sans-serif;
-          font-optical-sizing: auto;
+          font-family: "Manrope", sans-serif; 
           font-weight: 600;
      
         }
@@ -41,10 +43,10 @@
 <body class="manrope-font">
     <!-- This is header section -->
      <header class="container mx-auto">
-        <div class="navbar justify-evenly" >
-            <div class="navbar-start space-x-1">
+        <nav class="navbar justify-between" >
+            <div class="space-x-1">
               <i class="fa-solid fa-arrow-up rotate-45 bg-[#ABEF5F] text-black rounded-full p-1 w-6 h-6 "></i>
-              <h2 class="text-3xl font-bold">Renterio</h2>
+              <h class="text-3xl font-bold">Renterio</h>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-gray-500">
@@ -73,15 +75,42 @@
                 </div>
               <ul
                 tabindex="0"
-                class="menu  dropdown-content bg-green-100 rounded-box z-[1] p-2 shadow -left-12 top-8">
+                class="menu  dropdown-content bg-green-100 rounded-box z-[1] p-2 shadow right-1 top-8">
                   <li><a>Home</a></li>
                   <li><a>Services</a>
                 <li><a>Portfolio</a></li>
                 <li><a>Blogs</a></li>
                 <li><a>Contact Us</a></li>
             </div>
+        </nav>
+
+        <!-- Banner section -->
+         <section class="containe mx-auto  ">
+          <div class="mx-2 my-5 text-center ">
+
+            <!-- banner img -->
+            <div class="md:w-9/12  relative  md:left-20 lg:left-52 xl:left-80 2xl:left-96">
+              <img 
+                src="assets/banner.png"
+                alt="Home"
+                 />
             
+            </div>
+
+              <!-- Banner title -->
+            <div class="my-5 px-3">
+                <h2 class="Title_color text-5xl font-extrabold  ">A barn house of this design has  a striking appearance</h2>
+              <p class="Description_color text-lg my-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+              </div>
+
+              <!-- Banner button -->
+              <div >
+                <button class="btn bg-[#ABEF5F80] rounded-3x my-5">View Details <i class="fa-solid fa-arrow-up rotate-45 bg-black text-white rounded-full p-1 w-6 h-6"></i></button>
+              </div>
+          
+
           </div>
+         </section>
      </header>
      <!-- Header section end -->
 
