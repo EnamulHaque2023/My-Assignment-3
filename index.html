@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- This tailwind + DaisyUI CDN Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome cdn -->
+    <script src="https://kit.fontawesome.com/46fe952e05.js" crossorigin="anonymous"></script>
 
     <!-- Common script -->
     <script>
@@ -14,18 +21,67 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                bg_color: '#F4F4F4',
               }
             }
           }
         }
       </script>
+      <!-- Font style -->
+       <style>
+        .manrope-font{
+          font-family: "Manrope", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 600;
+     
+        }
+       </style>
     <title>Rinterio</title>
 </head>
-<body>
+<body class="manrope-font">
     <!-- This is header section -->
-     <header>
-        <h2>Rinterio</h2>
-
+     <header class="container mx-auto">
+        <div class="navbar justify-evenly" >
+            <div class="navbar-start space-x-1">
+              <i class="fa-solid fa-arrow-up rotate-45 bg-[#ABEF5F] text-black rounded-full p-1 w-6 h-6 "></i>
+              <h2 class="text-3xl font-bold">Renterio</h2>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-gray-500">
+                <li class="hover:bg-purple-400 duration-300 ease-in-out rounded-lg text-black"><a>Home</a></li>
+                <li class="hover:bg-purple-400 duration-300 ease-in-out rounded-lg"><a>Services</a>
+               <li class="hover:bg-purple-400 duration-300 ease-in-out rounded-lg"><a>Portfolio</a></li>
+               <li class="hover:bg-purple-400 duration-300 ease-in-out rounded-lg"><a>Blogs</a></li>
+               <li class="hover:bg-purple-400 duration-300 ease-in-out rounded-lg"><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <!-- Button and icons -->
+              <div class="flex items-center space-x-3  l">
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div><i class="fa-solid fa-cart-shopping"></i></div>
+                <div >
+                  <button class="btn bg-[#ABEF5F] rounded-3xl">Book Consult <i class="fa-solid fa-arrow-up rotate-45 bg-black text-white rounded-full p-1 w-6 h-6"></i></button>
+                </div>
+              </div>
+              
+            </div>
+            <!-- Humber for small device -->
+            <div class="dropdown lg:hidden flex">
+                <div >
+                  <button><i class="fa-solid fa-bars"></i> </button>
+                </div>
+              <ul
+                tabindex="0"
+                class="menu  dropdown-content bg-green-100 rounded-box z-[1] p-2 shadow -left-12 top-8">
+                  <li><a>Home</a></li>
+                  <li><a>Services</a>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+            </div>
+            
+          </div>
      </header>
      <!-- Header section end -->
 
